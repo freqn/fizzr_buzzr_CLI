@@ -2,7 +2,7 @@ require './lib/fizzd'
 
 def greet
   spc
-  puts "Welcome to Fizzd which is a FizzBuzz CLI program authored in Ruby."
+  puts "Welcome to Fizzd, an interactive implementation of 'FizzBuzz'."
   puts <<STRING
 
   It works something like this:
