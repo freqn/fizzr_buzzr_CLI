@@ -2,10 +2,10 @@ require './lib/fizzd'
 
 def greet
   spc
-  puts "Welcome to Fizzd, an interactive implementation of 'FizzBuzz'."
+  puts "Welcome to Fizzd, a user-defined implementation of 'FizzBuzz'."
   puts <<STRING
 
-  It works something like this for a user-defined range:
+  It works something like this for any whole number range:
 
     1) It returns 'Fizz' for any number divisible by 3 but not 5.
     2) It returns 'Buzz' for any number divisible by 5 but not 3.
