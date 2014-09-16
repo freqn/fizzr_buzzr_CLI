@@ -1,3 +1,2 @@
 *.pdf
-/export
 /config/secrets.rb
