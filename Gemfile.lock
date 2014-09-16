@@ -2,10 +2,17 @@ GEM
   remote: http://rubygems.org/
   specs:
     diff-lcs (1.2.5)
+    mailgun (0.8)
+      rest-client
+    mime-types (2.3)
+    netrc (0.7.7)
     pdf-core (0.2.5)
     prawn (1.2.1)
       pdf-core (~> 0.2.5)
       ttfunk (~> 1.2.0)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     rspec (3.1.0)
       rspec-core (~> 3.1.0)
       rspec-expectations (~> 3.1.0)
@@ -24,5 +31,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  mailgun
   prawn
   rspec
