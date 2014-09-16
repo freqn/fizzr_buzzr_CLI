@@ -1,16 +1,17 @@
-require './lib/fizzd'
+require '../lib/fizzd'
 
 def greet
+  system('clear')
   spc
   puts "Welcome to Fizzd, a user-defined implementation of 'FizzBuzz'."
   puts <<STRING
 
-  It works something like this for any whole number range:
+  It works for any range and returns the following:
 
-    1) It returns 'Fizz' for any number divisible by 3 but not 5.
-    2) It returns 'Buzz' for any number divisible by 5 but not 3.
-    3) It returns 'FizzBuzz' for any number divisible by both 3 & 5.
-    4) It returns the actual number for everything else.
+    1) 'Fizz' for any number divisible by 3 but not 5.
+    2) 'Buzz' for any number divisible by 5 but not 3.
+    3) 'FizzBuzz' for any number divisible by both 3 & 5.
+    4) The actual number for everything else.
 
 STRING
   main
@@ -25,7 +26,17 @@ def main
   spc
   n2 = gets.chomp.to_i
   spc
-  Fizzd.new(n1,n2).fizzbuzz
+  puts "Would you like to generate a PDF with your results, Y/N?"
+  spc
+  prawn = gets.chomp.capitalize
+  spc
+  if prawn == "Y"
+    Fizzd.new(n1,n2).fizzbuzz(prawn)
+    spc
+    puts "Your PDF has been successfully generated"
+  else
+    Fizzd.new(n1,n2).fizzbuzz(prawn)
+  end
   spc
   recur
 end
@@ -41,6 +52,8 @@ def recur
     spc
     puts "Ok then. See you next time!"
     spc
+    sleep(1)
+    system('clear')
   else
     spc
     puts "Please make a valid selection."
