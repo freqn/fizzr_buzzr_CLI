@@ -1,4 +1,5 @@
 require '../lib/fizzd'
+require '../lib/mailer'
 
 def greet
   system('clear')
@@ -18,11 +19,11 @@ STRING
 end
 
 def main
-  puts "Now enter the lowest number of your desired range:"
+  puts "Type the lowest number of your desired range:"
   spc
   n1 = gets.chomp.to_i
   spc
-  puts "Enter your highest number:"
+  puts "Type your highest number:"
   spc
   n2 = gets.chomp.to_i
   spc
@@ -33,7 +34,15 @@ def main
   if prawn == "Y"
     Fizzd.new(n1,n2).fizzbuzz(prawn)
     spc
-    puts "Your PDF has been successfully generated"
+    puts "Your PDF has been successfully generated. Would you like to send it to somebody, Y/N?"
+    spc
+    email = gets.chomp.capitalize
+    case email
+    when 'Y'
+      spc
+      address_prompt
+      mailer
+    end
   else
     Fizzd.new(n1,n2).fizzbuzz(prawn)
   end
@@ -60,6 +69,19 @@ def recur
     spc
     recur
   end
+end
+
+def address_prompt
+  puts "Enter an email address"
+  spc
+  @email = gets.chomp
+  spc
+  puts "Generating and sending email.."
+  sleep(1)
+end
+
+def mailer
+  Mailer.new(@email)
 end
 
 def spc
