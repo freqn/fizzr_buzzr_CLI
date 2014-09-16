@@ -4,7 +4,7 @@ require '../config/secrets'
 class Mailer < Secrets
   def initialize(email)
     Mailgun.configure do |config|
-      config.api_key = @api
+      config.api_key = @@mail_param[:key]
       config.domain  = @@domain
     end
     @mailgun = Mailgun(:api_key => @@mail_param[:key])
