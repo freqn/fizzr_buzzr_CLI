@@ -78,6 +78,8 @@ def address_prompt
   spc
   puts "Generating and sending email.."
   sleep(1)
+  spc
+  puts "Sent successfully"
 end
 
 def mailer
