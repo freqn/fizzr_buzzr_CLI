@@ -13,7 +13,6 @@ class Fizz_em
         2) 'Buzz' for any number divisible by 5 but not 3.
         3) 'FizzBuzz' for any number divisible by both 3 & 5.
         4) The actual number for everything else.\n\n"
-
     main
   end
 
