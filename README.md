@@ -14,7 +14,7 @@ FizzBuzz overkill in the making
 In the root project directory:
 
 1. `mkdir export config`
-2. 'touch config/secrets.rb`
+2. `touch config/secrets.rb`
 3. In `secrets.rb` add the following:
 
 ```ruby
