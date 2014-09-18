@@ -1,2 +1,2 @@
-*/export/*.pdf
-*/config/secrets.rb
+*.pdf
+/config/secrets.rb
