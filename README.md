@@ -1,16 +1,18 @@
 fizzr_buzzr_CLI
 ===============
 
+**Description**
+
 FizzBuzz overkill in the making
 
-**Dependencies**
+Dependencies
 ===============
 
 * RSpec
 * Prawn
 * Mailgun
 
-**Configuration**
+Configuration
 ===============
 
 In the root project directory:
@@ -34,7 +36,7 @@ Usage
 3. Check the export folder for your hot-off-the-press PDF.
 4. Print it out & smell the paper. (Mandatory)
 
-**Bugs?**
+Bugs?
 ===============
 
 Please raise an issue.
