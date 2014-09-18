@@ -1,9 +1,9 @@
 fizzr_buzzr_CLI
 ===============
 
-**Description**
+**Fizzbuzz overkill**
 
-FizzBuzz overkill in the making
+A simple project to explore CLI creation and PDF generation
 
 Dependencies
 ===============
