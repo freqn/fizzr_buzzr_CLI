@@ -7,8 +7,7 @@ class Fizz_em
     spc
     puts "Welcome to Fizzd, a user-defined implementation of 'FizzBuzz'."
     spc
-    puts "It works for any range and returns the following:
-
+    puts "It works for any range and returns the following:\n
         1) 'Fizz' for any number divisible by 3 but not 5.
         2) 'Buzz' for any number divisible by 5 but not 3.
         3) 'FizzBuzz' for any number divisible by both 3 & 5.
