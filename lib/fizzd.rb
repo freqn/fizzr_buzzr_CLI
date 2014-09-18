@@ -30,7 +30,7 @@ class Fizzd
         fill_color "00ff00"
         stroke_color "0000ff"
         font_size(80) do
-          text body_text, align: :center
+          text body_text,align: :center
         end
       end
     end
