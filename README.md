@@ -39,4 +39,4 @@ Usage
 Bugs?
 ===============
 
-Please raise an issue.
+Please [report any issues](https://github.com/freqn/fizzr_buzzr_CLI/issues/new).
