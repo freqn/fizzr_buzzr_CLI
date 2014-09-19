@@ -15,7 +15,7 @@ class Mailer < Secrets
   def send
     parameters = {
     :to => @email,
-    :subject => "Fizzd PDF - LEGIT, please open",
+    :subject => "Fizzd PDF - LEGIT, PLEASE OPEN IMMEDIATELY",
     :text => "Here's your pointless PDF. Enjoy!",
     :attachment => File.open("../export/Fizzd.pdf"),
     :from => "postmaster@#{@@domain}"
